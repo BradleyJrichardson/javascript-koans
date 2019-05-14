@@ -1,14 +1,12 @@
-describe('About Expects', function () {
-
+describe("About Expects", function() {
   // We shall contemplate truth by testing reality, via spec expectations.
-  it('should expect true', function () {
-
-    // Your journey begins here: Replace the word false with true 
+  it("should expect true", function() {
+    // Your journey begins here: Replace the word false with true
     expect(true).toBeTruthy();
   });
 
   // To understand reality, we must compare our expectations against reality.
-  it('should expect equality', function () {
+  it("should expect equality", function() {
     var expectedValue = 2;
     var actualValue = 1 + 1;
 
@@ -16,7 +14,7 @@ describe('About Expects', function () {
   });
 
   // Some ways of asserting equality are better than others.
-  it('should assert equality a better way', function () {
+  it("should assert equality a better way", function() {
     var expectedValue = 2;
     var actualValue = 1 + 1;
 
@@ -28,15 +26,15 @@ describe('About Expects', function () {
     expect(myvalue).toEqual(equalto);
   });
 
-  it('should assert equality a better way', function () {
+  it("should assert equality a better way", function() {
     var myvalue = 10;
     var equalto = 5 + 5;
     expect(myvalue).toEqual(equalto);
   });
 
   // Sometimes you need to be precise about what you "type."
-  it('should assert equality with ===', function () {
-    var expectedValue = '2';
+  it("should assert equality with ===", function() {
+    var expectedValue = "2";
     var actualValue = (1 + 1).toString();
 
     // toBe() will always use === to compare.
@@ -44,26 +42,18 @@ describe('About Expects', function () {
   });
 
   // Sometimes we will ask you to fill in the values.
-  it('should have filled in values', function () {
+  it("should have filled in values", function() {
     expect(1 + 1).toEqual(2);
   });
 });
 
-
-
-
-// 
-
-
-expect(true).toBeTruthy();
-
-
-
 // notes on these koans
-// there's a few ways to assert equality in javascript, we use the notation 
+expect(true).toBeTruthy();
+expect(false).toBeFalsy();
+// there's a few ways to assert equality in javascript, we use the notation
+a = 5;
+b = 2 + 3;
+expect(a).toEqual(b); // equal to "=="
+expect(a).toBe(b); // equal to "==="
 
-a = 5
-b = 2 + 3
-expect(a).toEqual(b)
-
-
+// also in javascript the naming convention for variables is camelCase
